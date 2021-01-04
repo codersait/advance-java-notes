@@ -1,0 +1,19 @@
+### Exceptions
+- Javada primitive tipler haric her sey objedir.Exceptionlar da objedir.
+- Firlatilan hatanin ya kendisi ya super tipi olmalidir.Yoksa catch bloguna dusmez!`catch(Exception e)`
+- Birden fazla catch blogu olabilir.**Ozelden genele dogru** `extends` iliskisine gore.
+- `catch` blogu olmazsa exception alindiginda program **crash** olur. Exceptiondan sonraki kodlar calismaz.
+- `try-catchXN-finally`  N -> 0 , 1 , 2...
+- **finally** blogu ->  kodumuzda exception olsun ya da olmasin calismasini istedigimiz bir kod blogunu `finally` blogu icerisine aliriz.
+- close resource , clean up 
+- database connection , network islemleri , dosya okuma/yazma vs vs bu gibi islemlerde kaynaklarin temizlenmesi/kapatilmasi gereklidir.Aksi durumda memory leak'ler , memory sismeleri ortaya cikabilir (OutOfMemoryError).Ya da veritabani ,siser , isteklere cevap veremez.
+- `catch` blogu olmadan da `finally` calisir.
+- TEK BASINA `finally` olamaz.
+- `catch-finally` seklinde de **olamaz**.
+- `Error` lar ve `RuntimeException` lar **unchecked** tipindedir.
+- `RuntimeException` ini kalitmayan exceptionlar , `Throwable` ise **checked** tipindedir.
+- `throws` keywordu `method/constructor` deklarasyonunda/ifadesinde/tanimlanmasinda kullanilabilir.
+- `throws` anlami -> ben X hatasini FIRLATABILIRIM! anlamina gelir.Kesin firlatilacak diye bir sey yok. Boyle bir risk var anlamina gelir.
+- Bir `metodu/constructor` i cagirdigimizda ve bu `metot/constructor` bir checked exception firlatma riski tasidiginda( `throws` ifadesi barindirdiginda) bu durumda compiler bize derleme hatasi verir.
+- `handle` or `declare` rule adi verilir.`handle -> try-catch`  `declare -> throws`. Bu kural sadece **Checked Exceptionlar** icin zorunludur.
+- `UncheckedExceptionlari` genel olarak yakalama egilimi yerine ilgili hata durumunu **fixlememiz** daha dogru olacaktir.
