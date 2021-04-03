@@ -6,5 +6,6 @@
 - `test.set(2,"sait");` --> **Replaces** the element at **the specified position** in this list with the specified element (optional operation).
 - `test.removeIf(item->item.equals("sait"));` **-->** Removes all of the elements of this collection that **satisfy the given predicate.**
 - `private final String id;` **and** `UUID.randomUUID().toString()` **-->** Generate random ID.
+- Introduce local variable in IntelliJ Idea `alt+Enter`
 
 
