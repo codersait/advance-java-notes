@@ -5,6 +5,6 @@
 - `List<String> test = new ArrayList<>();` and `test.addAll(List.of("Salih","Veli","Ahmet"));` **not fixed sized** list.
 - `test.set(2,"sait");` --> **Replaces** the element at **the specified position** in this list with the specified element (optional operation).
 - `test.removeIf(item->item.equals("sait"));` **-->** Removes all of the elements of this collection that **satisfy the given predicate.**
-- `UUID.randomUUID().toString()` **-->** Generate random ID.
+- `private final String id;` **and** `UUID.randomUUID().toString()` **-->** Generate random ID.
 
 
